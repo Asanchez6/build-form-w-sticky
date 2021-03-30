@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sticky Form Build</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="inner-container">
+            <h1 class="sr-only">Company Name</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="75.14" height="72.676" viewBox="0 0 75.14 72.676"><path d="M51.85 29.084c8.017 0 14.522-6.514 14.522-14.536C66.372 6.524 59.866 0 51.85 0c-8.03 0-14.573 6.524-14.573 14.548 0 8.022 6.543 14.536 14.573 14.536M0 3.256h24.701v69.42H0zM57.695 37.136L35.367 50.087l11.5 22.589h28.272z"></path></svg>
+            <nav>
+                <ul class="navlink">
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Websites</a></li>
+                    <li><a href="#">Packaging</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <form action="#" method="POST">
+            <h2>Project Form</h2>
+            <p>Fill in the fields below and describe your needs</p>
+            <p>In return we will contact you and suggest solutions for your business needs</p>
+            <fieldset>
+                <div>
+                    <label for="fullName">Name/Surname</label>
+                    <input type="text" placeholder="e.g Jane Doe" id="fullName">
+                </div>
+
+                <div>
+                    <label for="company">Company</label>
+                    <input type="text" placeholder="To get to know you" id="company" autofocus>
+                </div>
+
+                <div>
+                    <label for="phoneNum">Tele #</label>
+                    <input type="tel" placeholder="To get in touch with you" id="phoneNum">
+                </div>
+
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" placeholder="For your regions code." id="city">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="To reach out to you." id="email">
+                </div>
+
+                <div>
+                    <label for="currentWebsite">Website</label>
+                    <input type="url" placeholder="Www.Something.com" id="currentWebsite">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="deadline">Deadline</label>
+                    <input type="date" id="deadline">
+                </div>
+                <div>
+                    <label for="budget">Budget</label>
+                    <input type="number" placeholder="200-2000" id="budget">
+                </div>
+
+                <div>
+                    <label for="projectUrl">Current URL</label>
+                    <input type="url" placeholder="WWW.website" id="projectUrl">
+                </div>
+
+                <div>
+                    <label for="Taudiance">Target Audiance</label>
+                    <input type="text" placeholder="Your Specific audiance" id="Taudiance">
+                </div>
+
+                <div>
+                    <label for="Pdescription">Project Description</label>
+                    <input type="text" placeholder="Discribe your vision or needs" id="Pdescription">
+                </div>
+            </fieldset>
+            <div>
+                <p>By completing and sending the data you agree to our privacy policy</p>
+                <input type="checkbox" id="terms">
+                <label for="terms">Accept</label>
+            </div>
+            <div>
+                <input type="submit" value="Send >">
+            </div>
+        </form>
+    </section>
+
+
+
 </body>
+
 </html>
